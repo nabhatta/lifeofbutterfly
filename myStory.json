@@ -1,0 +1,213 @@
+{
+    "Title": "Life of a Butterfly",
+    "Credits": "Created by Nayanika Bhattacharya (nabhatta@ucsc.edu).",
+    "InitialLocation": "Egg",
+    "Locations": {
+        "Egg": {
+            "Body": "You begin life in this world as an egg.",
+            "Choices": [
+                {
+                    "Text": "Hatch!",
+                    "Target": "Larva"
+                }
+            ]
+        },
+        "Larva": {
+            "Body": "Now that you've hatched you are ready to explore life as a caterpillar!",
+            "Choices": [
+                {
+                    "Text": "Let's eat!",
+                    "Target": "Shrubbery"
+                },
+                {
+                    "Text": "Let's make friends!",
+                    "Target": "Friends"
+                }
+            ]
+        },
+        "Shrubbery": {
+            "Body": "Time to eat and grow! What plants will you choose?",
+            "Choices": [
+                {
+                    "Text": "Something red...",
+                    "Target": "Strawberries"
+                },
+                {
+                    "Text": "Something green...",
+                    "Target": "Mulberry Leaves"
+                },
+                {
+                    "Text": "Something blue...",
+                    "Target": "Blueberries"
+                },
+                {
+                    "Text": "Socialize",
+                    "Target": "Friends"
+                }
+            ]
+        },
+        "Friends": {
+            "Body": "It's hard making friends! I think I hear some though!",
+            "Choices": [
+                {
+                    "Text": "Follow buzzing noise...",
+                    "Target": "Bee"
+                },
+                {
+                    "Text": "Follow humming noise...",
+                    "Target": "Hummingbird"
+                },
+                {
+                    "Text": "I'm hungry",
+                    "Target": "Shrubbery"
+                }
+            ]
+        },
+        "Strawberries": {
+            "Body": "You come closer to see that the something red is strawberries! Yum!",
+            "Choices": [
+                {
+                    "Text": "Eat more!",
+                    "Target": "Shrubbery"
+                },
+                {
+                    "Text": "Socialize",
+                    "Target": "Friends"
+                }
+            ]
+        },
+        "Mulberry Leaves": {
+            "Body": "You come closer to see that the something green is mulberry leaves, healthy choice!",
+            "Choices": [
+                {
+                    "Text": "Eat more!",
+                    "Target": "Shrubbery"
+                },
+                {
+                    "Text": "Socialize",
+                    "Target": "Friends"
+                },
+                {
+                    "Text": "Next stage...",
+                    "Target": "Chrysalis"
+                }
+            ]
+        },
+        "Blueberries": {
+            "Body": "You come closer to see that the something blue is blueberries! Yum!",
+            "Choices": [
+                {
+                    "Text": "Eat more!",
+                    "Target": "Shrubbery"
+                },
+                {
+                    "Text": "Socialize",
+                    "Target": "Friends"
+                }
+            ]
+        },
+        "Bee": {
+            "Body": "You follow the buzzing noise and come across a bumble bee.",
+            "Choices": [
+                {
+                    "Text": "Talk to her",
+                    "Target": "Bee Talk"
+                },
+                {
+                    "Text": "Socialize elsewhere",
+                    "Target": "Friends"
+                },
+                {
+                    "Text": "I'm hungry",
+                    "Target": "Shrubbery"
+                }
+            ]
+        },
+        "Hummingbird": {
+            "Body": "You follow the humming noise and come across a hummingbird.",
+            "Choices": [
+                {
+                    "Text": "Talk to her",
+                    "Target": "Hum Talk"
+                },
+                {
+                    "Text": "Socialize elsewhere",
+                    "Target": "Friends"
+                },
+                {
+                    "Text": "I'm hungry",
+                    "Target": "Shrubbery"
+                }
+            ]
+        },
+        "Hum Talk": {
+            "Body": "Hummingbird: Back in my day caterpillars weren't out and about so much! When are you going to settle and form a nice cocoon sweetie?<br><br>Taken aback by the hummingbird's traditional point of view, you decide to move on.",
+            "Choices": [
+                {
+                    "Text": "Socialize elsewhere",
+                    "Target": "Friends"
+                },
+                {
+                    "Text": "I'm hungry",
+                    "Target": "Shrubbery"
+                }
+            ]
+        },
+        "Bee Talk": {
+            "Body": "Bee: I amire your bravery for talking to me, most people assume I'll sting them. You are destined for greatness... <br><br>Feeling inspired by the bee's words you continue along with your journey.",
+            "Choices": [
+                {
+                    "Text": "Socialize elsewhere",
+                    "Target": "Friends"
+                },
+                {
+                    "Text": "I'm hungry",
+                    "Target": "Shrubbery"
+                }
+            ]
+        },
+        "Chrysalis": {
+            "Scene": "ChrysalisScene",
+            "Body": "After finding a nice tree, you're ready to move on to your next stage and make a nice chrysalis for yourself. You deserve the rest. <br><br> Everything feels still. The rustle of leaves, the hum of chatter—it’s all behind me now. I remember the sweet tang of mulberry, the warmth of the sun on my back, the way laughter felt when I made my first friend. I was just a caterpillar, inching through life. I didn't know I was preparing for something more. It’s quiet here, but not empty. I’m not afraid. I’m changing. I think I’m ready to fly.",
+            "Choices": [
+                {
+                    "Text": "I want to stay a caterpillar!",
+                    "Target": "Larva"
+                },
+                {
+                    "Text": "I'm ready for this next stage",
+                    "Target": "Adult"
+                }
+            ]
+        },
+        "Adult": {
+            "Body": "Congrats! You've emerged from the chrysalis as a beautiful adult butterfly! It is now up to you to continue the cycle.",
+            "Choices": [
+                {
+                    "Text": "Go to the field of flowers",
+                    "Target": "Flowers"
+                },
+                {
+                    "Text": "Repopulate and lay eggs",
+                    "Target": "Lay"
+                }
+            ]
+        },
+        "Lay": {
+            "Body": "You've laid eggs! You're a mother and your offspring will carry on your legacy.",
+            "Choices": [
+                {
+                    "Text": "Play again",
+                    "Target": "Egg"
+                },
+                {
+                    "Text": "My journey is complete",
+                    "Target": "Lay"
+                }
+            ]
+        },
+        "Flowers": {
+            "Body": "You fly off to a field and overlook the flowers, it's absolutely beautiful. You've lived a beautiful fulfilling life as a butterfly."
+        }
+    }
+}
